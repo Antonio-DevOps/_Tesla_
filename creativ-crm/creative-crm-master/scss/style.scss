@@ -1,0 +1,179 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+button{
+	background: none;
+	border: none;
+}
+.ba-main-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+
+	@media screen and (min-width: 991px){
+		min-height: 100vh;
+	}
+}
+.ba-toolbar {
+	padding: 15px 0;
+	border: 2px solid #f8f8f8;
+	position: relative;
+	&-wrapper{
+		display: flex;
+		align-items: center;
+	}
+}
+
+.ba-breadcrumbs{
+	&__list{
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	&__item{
+		font-weight: bold;
+	}
+
+	&__item + &__item{
+		&:before{
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 900;
+			font-size: 1rem;
+			content: '\f105';
+			margin: 2px .75rem 0 1rem;
+			display: inline-block;
+		}
+	}
+}
+.ba-search{
+	margin-left: auto;
+	&-form{
+		position: fixed;
+		transform: translateY(-100%);
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: .5rem 1rem;
+		background-color: #fff;
+		box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.5);
+		display: flex;
+		transition: transform .3s;
+		
+		&.open {
+			position: absolute;
+			top: 100%;
+			transform: translateY(0);
+		}
+
+		@media screen and (min-width: 991px){
+			position: static;
+			width: auto;
+			padding: 0;
+			transform: none;
+			box-shadow: none;
+		}
+	}
+
+	&__input{
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+		margin-right: 0.5rem;
+	}
+}
+.ba-user{
+	display: flex;
+	align-items: center;
+	&__link{
+		display: flex;
+		align-items: center;
+		color:#fff;
+		.ba-toolbar & {
+			color: $primaryColor;
+		}
+	}
+	&__photo{
+		margin-right: 1rem;
+	}
+}
+
+
+
+// TABS
+
+.ba-tabs{
+	&-header{
+		background-color: white;
+		overflow: auto;	
+	}
+
+	&-buttons{
+		list-style: none;
+		display: flex;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__btn{
+		height: 60px;
+		display: block;
+		text-transform: uppercase;
+		font-weight: bold;
+		position: relative;
+
+		&.active{
+			&::after{
+				content: "";
+				height: 4px;
+				width: 100%;
+				border-radius: 2px;
+				background-color: #442a9d;
+				display: block;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+
+			}
+		}
+	}
+	&-panel{
+		display: none;
+
+		&.active{
+			display: block;
+		}
+
+
+	}
+}
+.ba-activity{
+	&-list{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&-item{
+		display: flex;
+		align-items: center;
+		background-color: white;
+		border-radius: 5px;
+		padding: .875rem 2rem .875rem 1rem;
+		margin-bottom: 1rem;
+		
+		}
+	&__photo{
+			margin-right: 1rem;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			display: inline-block;
+			@media screen and (min-width: 991px){
+				margin-right: 60px;
+		}	
+	}
+
+	&__time{
+		margin-left: auto;
+	}
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex-grid</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/app.css">
+
+    <style>
+        .box{
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="ba-row">
+            <div class="ba-col-6">
+                <div class="box">col-6</div>
+            </div>
+            <div class="ba-col-6">
+                <div class="box">col-6</div>
+            </div>
+        </div>
+
+        <div class="ba-row">
+                <div class="ba-col-4">
+                    <div class="box">col-4</div>
+                </div>
+                <div class="ba-col-4">
+                    <div class="box">col-4</div>
+                </div>
+                <div class="ba-col-4">
+                        <div class="box">col-4</div>
+                    </div>
+            </div>
+    </div>
+    
+</body>
+</html>

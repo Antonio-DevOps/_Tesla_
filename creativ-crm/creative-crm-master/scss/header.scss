@@ -1,0 +1,93 @@
+.ba-header{
+    background-color: $primaryColor;
+    padding-top: 40px;
+    &-top{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        padding: 0 1rem;
+
+        .ba-notification-wrapper{
+            margin-left: auto;
+            margin-right: 2rem;
+            color: #fff;
+        }
+
+        @media screen and (min-width: 991px) {
+            margin-bottom: 50px;
+        }
+    }
+
+}
+.ba-logo{
+    color: $yellow;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding-left: 1rem;
+    display: inline-block;
+
+    @media screen and (min-width: 450px){
+        font-size: 1.75rem;
+    }
+}
+.ba-menu{
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    &.open{
+        display: flex;
+    }
+
+        &__item-user{
+            padding: 1rem;
+        }
+    
+        &__link{
+            position: relative;
+            color: inherit;
+            text-decoration: none;
+            font-size: 1.125rem;
+            display: block;
+            padding: 1rem 1rem 1rem 70px;
+            text-transform: capitalize;
+            font-weight: 300;
+            &:after{
+                content: "";
+                display: block;
+                background-color: rgba(255, 255, 255, .25);
+                height: 1px;
+                bottom: 0;
+                left: 1rem;
+                right: 1rem;
+                position: absolute;
+            }
+            .fas{
+                position: absolute;
+                left: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 23px;
+            }
+            &.active{
+                background-color: #442a9d;
+                border-left: 5px solid $yellow;
+            }
+            &:hover, &:focus{
+                background-color: lighten(#442a9d, 10);
+            }
+        }
+        &-btn{
+            color: #fff;
+
+            @media screen and (min-width: 991px){
+                display: none;
+            }
+        }
+        @media screen and (min-width: 991px){
+            display: flex;
+        }
+}

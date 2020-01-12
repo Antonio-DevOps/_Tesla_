@@ -1,0 +1,34 @@
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+
+}
+li{
+    list-style: none;
+}
+.logo{
+    width: 6.25rem;
+    height: 6.25rem;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu__nav{
+    display: flex;
+}
+.menu_nav-second{
+    display: flex;
+}
+.menu__items__second{
+    margin-right: 1rem;
+}
+.sub_menu{
+    display: none;
+}
+.menu__items:not(:last-child){
+    margin-right: 5rem;
+}
