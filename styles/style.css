@@ -10,6 +10,11 @@ img {
   height: 100%;
   display: block; }
 
+video {
+  max-width: 100%;
+  height: 100%;
+  display: block; }
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -17,3 +22,30 @@ img {
   height: 1px;
   margin: -1px;
   left: -999999px; }
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  height: 100%; }
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.containerksi {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.rem {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.white {
+  color: white; }

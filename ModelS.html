@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/slick.css">
+    <link rel="stylesheet" href="styles/slick-theme.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Public+Sans:300&display=swap" rel="stylesheet">
     <title>ModelS</title>
@@ -51,16 +56,16 @@
 
         </nav>
     </header>
-            <main class="container">
+            <div class="container">
                 <div class="ba-row sub__info">
                     <div class="ba-col-4">
-                        <div class="box__sub">
+                        <div class="box__sub__right">
                             <span class="title_big_sub"><i class="fas fa-tachometer-alt"></i> 2.4s</span>
                             <p class="title_litle_sub" >From 0-60 mph</p>
                         </div>
                     </div>
                     <div class="ba-col-4">
-                        <div class="box__sub">
+                        <div class="box__sub__right">
                             <span class="title_big_sub">28 cu ft</span>
                             <p class="title_litle_sub">Best in Class Storage</p>
                         </div>
@@ -74,7 +79,7 @@
                                         <p class="title_litle_sub">Range (EPA)</p></div>
                                 </div>
                                 <div class="ba-col-6">
-                                    <div class="box__sub">
+                                    <div class="box__sub__btn">
                                         <a href="#" class="btn__for-Order" >Order Now</a>
                                     </div>
                                 </div>
@@ -84,9 +89,275 @@
                         </div>
                     </div>
                 </div>
-            </main>
-        </section>
+                <div class="arrow rem">
+                    <a href="#section__2" class="arrow__point header-arrow"><i class="fas fa-angle-down"></i></a>
+                </div>
+            </div>
+    </section>
+    <section id="section__2"  class="container__s2">
+            <div class="ba-row">
+                <div class="ba-col-8">
+                    <div class="box">
+                        <div class="box_left">
+                        <video autoplay=" " muted =" " loop =" " width="100%" height="100%">
+                            <source src="video/range.mp4">
+                        </video>
+                        <div class="contant__bottom">
+                            <ul class="title__menu">
+                                <li class="title_sub_menu">
+                                    <h3 class="sub__title__big white">373 mi</h3>
+                                    <p class="sub__title__little white">The longest electric range of any car on the road—up to 373 miles</p class="sub__title__little" >
+                                </li>
+                                <li class="title_sub_menu">
+                                    <h3 class="sub__title__big white">15 min</h3>
+                                    <p class="sub__title__little white">Recharge up to 130 miles in 15 minutes at any Supercharger location</p>
+
+                                </li>
+                                <li class="title_sub_menu">
+                                    <h3 class=" white sub__title__big white">14,000+</h3>
+                                    <p class="sub__title__little white">Superchargers placed along well-traveled routes around the world</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="ba-col-4">
+                    <div class="box__right">
+                        <div class="box__block_1">
+                    <h3 class="sub__title__big">Go Anywhere</h3>
+                     <p class="sub__title__little">Model S can get you anywhere you want to go—with industry-leading range and convenient charging options, all over the world.</p>
+                    </div>
+                    <div class="box__block_2">
+                        <a href="https://www.tesla.com/findus?bounds=44.30582794999409%2C-67.60916687260823%2C31.867365337635512%2C-101.35916687260823&zoom=6&filters=destination%20charger%2Cstore%2Cservice%2Csupercharger" target="_blank" class="block2__btn"><i class="fas fa-plus-circle"></i>
+                        <span>Lern More</span>
+                    </a>
+                    <a href="#"  class="btn__for-Order">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- <div class="ba-row">
+                <div class="ba-col-8">
+                    <div class="container">  
+                        <video autoplay=" " muted =" " loop =" ">
+                            <source src="video/range.mp4">
+                        </video>
+                        <div class="abso container">
+                            <div class="title__inform">
+                                <ul class="title__menu">
+                                    <li class="title_sub_menu">
+                                        <h3 class="sub__title__big">373 mi</h3 class="sub__title" >
+                                        <p class="sub__title__little">The longest electric range of any car on the road—up to 373 miles</p class="sub__title__little" >
+                                    </li>
+                                    <li class="title_sub_menu">
+                                        <h3 class="sub__title__big">15 min</h3>
+                                        <p class="sub__title__little">Recharge up to 130 miles in 15 minutes at any Supercharger location</p>
+
+                                    </li>
+                                    <li class="title_sub_menu">
+                                        <h3 class="sub__title__big">14,000+</h3>
+                                        <p class="sub__title__little">Superchargers placed along well-traveled routes around the world</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>                
+                <div class="ba-col-4">
+                    <div class="box">
+                        <h3 class="sub__title__big">Go Anywhere</h3>
+                      <p class="sub__title__little">Model S can get you anywhere you want to go—with industry-leading range and convenient charging options, all over the world.</p>
+                    </div>
+                </div>
+            </div> -->
+    </section>
+    <section id="section__3" class="containerksi">
+            <div class="arrow">
+                <a href="#section__1" class="arrow__point header-arrow"><i class="fas fa-angle-double-up"></i></a>
+            </div>
+            <div class="sliderS">
+                <div>
+                    <img data-lazy="file:///D:/courses/academy/lessons/Tesla/model_S/pictr1.jpg" alt="1">
+                </div>
+                <div>
+                    <img src="file:///D:/courses/academy/lessons/Tesla/model_S/pictr2.jpg" alt="2">
+                </div>
+                <div>
+                    <img src="file:///D:/courses/academy/lessons/Tesla/model_S/pictr3.jpg" alt="3">
+                </div>
+                <div>
+                    <img src="file:///D:/courses/academy/lessons/Tesla/model_S/pictr4.jpg" alt="4">
+                </div>
+                <div>
+                    <img src="file:///D:/courses/academy/lessons/Tesla/model_S/pictr5.jpg" alt="5">
+                </div>
+              </div>
+    </section>
+    <section id="section__4" class="bg_4">
+               <div class="container">
+                   <div class="article ">
+                       <h3 class="title_News_big">
+                           News
+                       </h3>
+                       <p class="title_News_little">
+                         what's new
+                       </p>
+                   </div>
+                   <div>
+
+                   </div>
+                   <div id="slider-news" class="container">
+                       <!--------------------- start slide -------------------->
+                   <div class="slide">
+                    <div class="for_img">
+                    <img src="img/newsadapt.jpg" alt="" class="ModelS_black">
+                    </div>
+                <div class="post__contant">
+                    <div class="post__title">See The Unmatched Beauty Of The Great. Lakes.</div>
+                    <div class="post__text">Free directories: directories are perfect for customers that are... searching for a</div>
+                </div>
+                <div class="post__author">
+                        <div class="wrap">
+                        <img class="wrap-img" src="img/autor1.png" alt="avatar">
+                        </div>
+                <div class="info">
+                            <p class="info-name">Melani Wolker</p>
+                            <time class="info-time" datetime="">09 Jan 2020</time>
+                </div>
+            </div>
+            </div>
+            <!-- ----------------end slide----------------- -->
+                <!--------------------- start slide -------------------->
+                <div class="slide">
+                    <div class="for_img">
+                    <img src="img/pict2adapt.jpg" alt="" class="ModelS_black">
+                    </div>
+                <div class="post__contant">
+                    <div class="post__title">See The Unmatched Beauty Of The Great. Lakes.</div>
+                    <div class="post__text">Free directories: directories are perfect for customers that are... searching for a</div>
+                </div>
+                <div class="post__author">
+                        <div class="wrap">
+                        <img class="wrap-img" src="img/autor1.png" alt="avatar">
+                        </div>
+                        <div class="info">
+                            <p class="info-name">Melani Wolker</p>
+                            <time class="info-time" datetime="">09 Des 2019</time>
+                        </div>
+                </div>
+            </div>
+            <!-- ----------------end slide----------------- -->
+                <!--------------------- start slide -------------------->
+                <div class="slide">
+                    <div class="for_img">
+                    <img src="img/pictr3adapt.jpg" alt="" class="ModelS_black">
+                    </div>
+                <div class="post__contant">
+                    <div class="post__title">See The Unmatched Beauty Of The Great. Lakes.</div>
+                    <div class="post__text">Free directories: directories are perfect for customers that are... searching for a</div>
+                </div>
+                <div class="post__author">
+                        <div class="wrap">
+                        <img class="wrap-img" src="img/autor2.png" alt="avatar">
+                        
+                </div>
+                <div class="info">
+                            <p class="info-name">Andry Dexter</p>
+                            <time class="info-time" datetime="">09 Feb 2019</time>
+                </div>
+            </div>
+            </div>
+            <!-- ----------------end slide----------------- -->
+                <!--------------------- start slide -------------------->
+                <div class="slide">
+                    <div class="for_img">
+                    <img src="img/pictr5adapt.jpg" alt="" class="ModelS_White">
+                    </div>
+                <div class="post__contant">
+                    <div class="post__title">Wee Did it! Tesla Model S black version! Check it out!</div>
+                    <div class="post__text">Free directories: directories are perfect for customers that are... searching for a</div>
+                </div>
+                <div class="post__author">
+                        <div class="wrap">
+                        <img class="wrap-img" src="img/autor3.png" alt="avatar">
+                        
+                </div>
+                <div class="info">
+                            <p class="info-name">Lise Teilor</p>
+                            <time class="info-time" datetime="">09 Dec 2019</time>
+                </div>
+            </div>
+            </div>
+            <!-- ----------------end slide----------------- -->
+            <!--------------------- start slide -------------------->
+            <div class="slide">
+                <div class="for_img">
+                <img src="img/spaceXadapt.jpg" alt="" class="ModelS_black">
+                </div>
+            <div class="post__contant">
+                <div class="post__title">Falcon 9 / Dragon 2020 Wee Did it! Check it out!</div>
+                <div class="post__text">Simulation of first crewed flight of Falcon 9 / Dragon 2020 u can check on my twitter</div>
+            </div>
+            <div class="post__author">
+                    <div class="wrap">
+                    <img class="wrap-img elon" src="img/autor4Adapt.jpg" alt="Elon Musk">
+                    
+            </div>
+            <div class="info">
+                        <p class="info-name elonText ">Elon Musk</p>
+                        <time class="info-time" datetime="">29 Jan 2020</time>
+            </div>
+        </div>
+        </div>
+        <!-- ----------------end slide----------------- -->
+            </div>
+            </div>
+    </section>
+    <footer class="b">
+        <div class="container">
+            <div class="footerLogo">
+                <a href="#">
+                <img src="img/Tesla_Motors_Logo.svg" alt="">
+            </a>
+            </div>
+            <div class="footer__contant">
+                <ul class="footer_menu">
+                    <li class="footer_link">
+                        <ul class="sub_menu">
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                    </ul></li>
+                    <li class="footer_link">
+                        <ul class="sub_menu">
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                    </ul></li>
+                    <li class="footer_link">
+                        <ul class="sub_menu">
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                    </ul></li>
+                    <li class="footer_link">
+                        <ul class="sub_menu">
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                    </ul></li>
+                </ul>
+            </div>
+    </footer>
+        
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script type="text/javascript" src="https://spikmi.com/Widget?Id=2500"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
     <script src="js/app.js"></script>
 </body>
 

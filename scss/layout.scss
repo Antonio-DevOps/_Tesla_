@@ -3,10 +3,12 @@ $container: 1170px;
 $gap: 15px;
 $col: 12;
 $colWidth: 100% / $col;
+$title_News: whitesmoke;
 
 $primaryColor: #303841;
 $secondaryColor: #4e4e4e;
 $yellow: #ffc12d;
+$colorForText: black;
 
 $btnBorderColor: $primaryColor;
 
@@ -21,6 +23,7 @@ $btnBorderColor: $primaryColor;
     margin: 0 auto;
     padding: 0 $gap;
     // background-color: $yellow;
+
 }
 
 /* Ba-grid  */

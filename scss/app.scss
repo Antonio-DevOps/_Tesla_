@@ -2,3 +2,25 @@
 @import "style.scss";
 @import "header.scss";
 @import "ModelS.scss";
+@font-face {
+    font-family: "gotham_mediumregular";
+    src: url("../fonts/gotham_medium_regular.ttf") format("opentype"), url("../fonts/gotham_medium_regular.woff2") format("woff2"), url("../fonts/gotham_medium_regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "gothambold1";
+    src: url("../fonts/gothambold1.eot");
+    src: local("gothambold1"), url("../fonts/gothambold1.woff") format("woff"), url("../fonts/gothambold1.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "gothamBook";
+    src: url("../fonts/gothamBook.eot");
+    src: local("gothamBook"), url("../fonts/gothamBook.woff") format("woff"), url("../fonts/gothamBook.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
