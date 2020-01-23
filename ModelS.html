@@ -8,13 +8,11 @@
     <link rel="stylesheet" href="styles/app.css">
     <link rel="stylesheet" href="styles/slick.css">
     <link rel="stylesheet" href="styles/slick-theme.css">
+    <link rel="stylesheet" href="styles/fonts.css">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Public+Sans:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap&subset=latin-ext,vietnamese" rel="stylesheet">
     <title>ModelS</title>
 </head>
 <body>
@@ -58,14 +56,18 @@
     </header>
             <div class="container">
                 <div class="ba-row sub__info">
-                    <div class="ba-col-4">
-                        <div class="box__sub__right">
-                            <span class="title_big_sub"><i class="fas fa-tachometer-alt"></i> 2.4s</span>
+                    <div class="ba-col-4 fix_size_header">
+                        <div class="box__sub__right fix_size_header">
+                            <div class="conteiner_sub">
+                            <span><img src="img/slow.svg" class="speed" alt="speed"></span>
+                            <span class="title_big_sub">2.4s</span>
+                        </div>
                             <p class="title_litle_sub" >From 0-60 mph</p>
                         </div>
                     </div>
-                    <div class="ba-col-4">
-                        <div class="box__sub__right">
+                    <div class="ba-col-4 fix_size_header">
+                        <div class="box__sub__right fix_size_header">
+                            
                             <span class="title_big_sub">28 cu ft</span>
                             <p class="title_litle_sub">Best in Class Storage</p>
                         </div>
@@ -90,7 +92,7 @@
                     </div>
                 </div>
                 <div class="arrow rem">
-                    <a href="#section__2" class="arrow__point header-arrow"><i class="fas fa-angle-down"></i></a>
+                    <a href="#section__2" class="arrow__point header-arrow"><img src="img/arrow-down-sign-to-navigate.png" alt="arrow_down_section2"></a>
                 </div>
             </div>
     </section>
@@ -173,7 +175,7 @@
     </section>
     <section id="section__3" class="containerksi">
             <div class="arrow">
-                <a href="#section__1" class="arrow__point header-arrow"><i class="fas fa-angle-double-up"></i></a>
+                <a href="#section__1" class="arrow__point header-arrow"><img src="img/chevron-up.png" alt="arrow_up_to_header"></a>
             </div>
             <div class="sliderS">
                 <div>
@@ -210,7 +212,7 @@
                        <!--------------------- start slide -------------------->
                    <div class="slide">
                     <div class="for_img">
-                    <img src="img/newsadapt.jpg" alt="" class="ModelS_black">
+                    <img src="img/newsadapt.jpg" alt="ModelS_black">
                     </div>
                 <div class="post__contant">
                     <div class="post__title">See The Unmatched Beauty Of The Great. Lakes.</div>
@@ -233,7 +235,7 @@
                     <img src="img/pict2adapt.jpg" alt="" class="ModelS_black">
                     </div>
                 <div class="post__contant">
-                    <div class="post__title">See The Unmatched Beauty Of The Great. Lakes.</div>
+                    <div class="post__title">We Did it! Tesla Model S black version! Check it out!</div>
                     <div class="post__text">Free directories: directories are perfect for customers that are... searching for a</div>
                 </div>
                 <div class="post__author">
@@ -253,7 +255,7 @@
                     <img src="img/pictr3adapt.jpg" alt="" class="ModelS_black">
                     </div>
                 <div class="post__contant">
-                    <div class="post__title">See The Unmatched Beauty Of The Great. Lakes.</div>
+                    <div class="post__title">We Did it! Tesla Model S black version! Check it out!</div>
                     <div class="post__text">Free directories: directories are perfect for customers that are... searching for a</div>
                 </div>
                 <div class="post__author">
@@ -274,7 +276,7 @@
                     <img src="img/pictr5adapt.jpg" alt="" class="ModelS_White">
                     </div>
                 <div class="post__contant">
-                    <div class="post__title">Wee Did it! Tesla Model S black version! Check it out!</div>
+                    <div class="post__title">We Did it! Tesla Model S black version! Check it out!</div>
                     <div class="post__text">Free directories: directories are perfect for customers that are... searching for a</div>
                 </div>
                 <div class="post__author">
@@ -295,8 +297,8 @@
                 <img src="img/spaceXadapt.jpg" alt="" class="ModelS_black">
                 </div>
             <div class="post__contant">
-                <div class="post__title">Falcon 9 / Dragon 2020 Wee Did it! Check it out!</div>
-                <div class="post__text">Simulation of first crewed flight of Falcon 9 / Dragon 2020 u can check on my twitter</div>
+                <div class="post__title">Falcon 9 / Dragon 2020 We Did it! Check it out!</div>
+                <div class="post__text">Simulation of first crewed flight of Falcon 9 / Dragon 2020 u can check on my twitter, it was be amazing! I proud we did it!</div>
             </div>
             <div class="post__author">
                     <div class="wrap">
@@ -307,51 +309,59 @@
                         <p class="info-name elonText ">Elon Musk</p>
                         <time class="info-time" datetime="">29 Jan 2020</time>
             </div>
-        </div>
+    </div>
         </div>
         <!-- ----------------end slide----------------- -->
             </div>
             </div>
     </section>
-    <footer class="b">
-        <div class="container">
+    <footer style="background-color: black;">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
             <div class="footerLogo">
                 <a href="#">
-                <img src="img/Tesla_Motors_Logo.svg" alt="">
+                <img src="img/Tesla_Motors_Logo.svg" alt="Logo" style="height: 100px; width: 100px;">
             </a>
             </div>
-            <div class="footer__contant">
-                <ul class="footer_menu">
-                    <li class="footer_link">
-                        <ul class="sub_menu">
-                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
-                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
-                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
-                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
-                    </ul></li>
-                    <li class="footer_link">
-                        <ul class="sub_menu">
-                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
-                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
-                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
-                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
-                    </ul></li>
-                    <li class="footer_link">
-                        <ul class="sub_menu">
-                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
-                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
-                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
-                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
-                    </ul></li>
-                    <li class="footer_link">
-                        <ul class="sub_menu">
-                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
-                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
-                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
-                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
-                    </ul></li>
-                </ul>
+            <ul class="footer_menu" style="color: white; display: flex;">
+                <li class="footer_link" style="margin-right: 5rem;">About Us</li>
+                <li class="footer_link" style="margin-right: 5rem;">Inforamtion</li>
+                <li class="footer_link" style="margin-right: 5rem;">Follow US</li>
+                <li class="footer_link" style="margin-right: 5rem;">Contact</li>
+            </ul>
+            <div class="footer_ksion4ik">
+                <h4 style="font-family: 'Bangers', cursive;font-size: .625rem;
+                letter-spacing: 1px; color: yellow;">Create by ksion4ik</h4>
             </div>
+                <!-- <ul class=" container footer_menu">
+                    <li class="footer_link">
+                        <ul class="sub_menu">
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                    </ul></li>
+                    <li class="footer_link">
+                        <ul class="sub_menu">
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                    </ul></li>
+                    <li class="footer_link">
+                        <ul class="sub_menu">
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                    </ul></li>
+                    <li class="footer_link">
+                        <ul class="sub_menu">
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                        <li class="footer_sub_link"><a href="#" class="footer_sub_btn">contact</a></li>
+                    </ul></li>
+            </div> -->
     </footer>
         
     <script src="js/jquery-3.4.1.min.js"></script>
