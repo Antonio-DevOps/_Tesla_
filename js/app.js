@@ -41,3 +41,4 @@ $('#slider-news').slick({
       });
     }
   }
+  
