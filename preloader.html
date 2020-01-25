@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/preloader.css">
+  <title>Document</title>
+</head>
+<body>
+  
+<div class="table">
+  <div class="table-cell">
+    <div id="main">
+      <div id="screen">
+        <div id="home">
+          <div id="radial">
+            <div id="empty"></div>
+          </div>
+          <div id="icon">
+            <i class="fa fa-battery-quarter fa-3x"></i>
+            <img src="http://i1204.photobucket.com/albums/bb409/david_barukcic/battery_icon_zpst5bk33aq.png"/>
+          </div>
+          <div id="status">15%</div>
+          <h1 id="countdown">0</h1>
+          <div id="mph">mph</div>
+        </div>
+        <div id="car">
+          <img src="http://i1204.photobucket.com/albums/bb409/david_barukcic/engine_icon_zpsnvg1y3qj.png" />
+          <h2>ENGINE<br>DIAGNOSTICS</h2>
+          <h3>DC/DC Converter<br>Failure <span class="small">not solved</span></h3>
+        </div>
+
+        <div id="cardva">
+          <img src="http://i1204.photobucket.com/albums/bb409/david_barukcic/temperature_icon_zpssyam3lm5.png" />
+
+          <h2>ENGINE<br>TEMPERATURE</h2>
+          <h3>46<span class="small">	℃</span></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script>
+let countdown = document.getElementById("countdown");
+let status = document.getElementById("status");
+let j = status + countdown;
+// function
+ let countItDown = function() {
+  var currentTime = parseFloat(countdown.textContent);
+  if (currentTime < 100) {
+    countdown.textContent = currentTime + 1;
+  } else {
+    countdown.textContent = 0;
+  }
+
+};
+// call interval 
+var timer = window.setInterval(countItDown, 100);
+
+
+// -------ANIMATIONS------- //
+
+$("#main")
+  .bind("touchstart", function() {
+    $(this).addClass("active");
+  })
+  .bind("touchend", function() {
+    $(this).removeClass("active");
+  });
+var mode = "home";
+
+$('#main').click(function() {
+  if (mode == "home") {
+    TweenMax.to($('#home'), 0.4, {
+      y: -360
+    })
+    TweenMax.fromTo($('#car'), 0.4, {
+      y: 360,
+      autoAlpha: 1
+    }, {
+      y: 0
+
+    })
+    mode = "car";
+  } else if (mode == "car") {
+    TweenMax.to($('#car'), 0.4, {
+      y: -360
+    })
+    TweenMax.fromTo($('#cardva'), 0.4, {
+      y: 360,
+      autoAlpha: 1
+    }, {
+      y: 0
+      
+
+    })
+    mode = "cardva";
+    } else if (mode == "cardva") {
+    TweenMax.to($('#home'), 0.2, {
+      y: 0
+    })
+    TweenMax.fromTo($('#cardva'), 0.2, {
+      y: 0,
+      autoAlpha: 1
+    }, {
+      y: 360
+    })
+    mode = "home";
+   
+  }
+});
+
+// ----- On render -----
+$(function() {
+
+  makeRadial({
+    el: $('#radial'),
+    radials: 100
+  })
+
+
+function makeRadial(options) {
+  if (options && options.el) {
+    let el = options.el;
+    let radials = 60;
+    if (options.radials) {
+      radials = options.radials;
+    }
+    var degrees = 360 / radials;
+    var i = 0;
+    for (i = 0; i < (radials / 2); i++) {
+      var newTick = $('<div class="tick"></div>').css({
+        '-moz-transform': 'rotate(' + (i * degrees) + 'deg)'
+      }).css({
+        '-webkit-transform': 'rotate(' + (i * degrees) + 'deg)'
+      }).css({
+        'transform': 'rotate(' + (i * degrees) + 'deg)'
+      })
+      el.prepend(newTick);
+    }
+  }
+}
+});
+</script>
+</html>

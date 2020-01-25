@@ -1,0 +1,243 @@
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #010101;
+   
+  }
+  
+  a, h1, h2, h3 {
+  
+    line-height: 1;
+  }
+  
+  .table {
+    display: table;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+  }
+  
+  .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  #main {
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.1s;
+    transition: -webkit-transform 0.1s;
+    transition: transform 0.1s;
+    transition: transform 0.1s, -webkit-transform 0.1s;
+    border-radius: 400px;
+    background: -webkit-linear-gradient(285deg, #00a8ff 0%, #cc00ff 100%);
+    background: linear-gradient(165deg, #00a8ff 0%, #cc00ff 100%);
+    margin: 0 auto;
+    box-shadow: 0 0 90px rgba(0, 0, 255, 0.6);
+  }
+  
+  #screen {
+    color: #fff;
+    z-index: 100;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    background: #010101;
+    width: 380px;
+    height: 380px;
+    margin: 10px;
+    border-radius: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  #radial {
+    position: absolute;
+    margin: 20px;
+    width: 340px;
+    height: 340px;
+    opacity: 0.5;
+  }
+  #radial #empty {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background-color: #000;
+    border-radius: 100%;
+    left: 5%;
+    top: 5%;
+    pointer-events: none;
+  }
+  #radial .tick {
+    position: absolute;
+    width: 1.5px;
+    height: 100%;
+    left: 50%;
+    margin-left: -1px;
+    background: #fff;
+    pointer-events: none;
+  }
+  
+  #home {
+    position: absolute;
+    mix-blend-mode: screen;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #home h1 {
+  
+    position: absolute;
+    top: 55%;
+    margin-top: -55px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 110px;
+    width: 100%;
+    letter-spacing: 5px;
+  }
+  #home #mph {
+    color: fff;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    bottom: 70px;
+    text-align: center;
+    font-size: 52px;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+  #home #status, #home h2 {
+    width: 100%;
+    font-size: 29px;
+    opacity: 1;
+    letter-spacing: 0.25px;
+    position: absolute;
+    top: 110px;
+    text-transform: uppercase;
+    color: #00a8ff;
+    font-weight: 200;
+    text-align: center;
+  }
+  
+  #home #icon img {
+    width: 55px;
+    
+    opacity: 1;
+    letter-spacing: 0.25px;
+    position: absolute;
+    top: 75px;
+    left: 162px;
+    text-transform: uppercase;
+    color: #00a8ff;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #main.pressed, #main:active {
+    -webkit-transform: scale(0.9875);
+            transform: scale(0.9875);
+    opacity: 0.7;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  #car {
+    mix-blend-mode: screen;
+    position: relative;
+    opacity: 0;
+  }
+  #car img {
+    width: 140px;
+    display: block;
+    position: absolute;
+    margin-top: 160px;
+    left: 115px;
+  }
+  #car h2 {
+    width: 100%;
+    font-size: 30px;
+    letter-spacing: 0.25px;
+    position: absolute;
+    top: 35px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    position: absolute;
+  }
+  #car h3 {
+    width: 100%;
+    font-size: 20px;
+    opacity: 1;
+    letter-spacing: 0.25px;
+    position: absolute;
+    top: 240px;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+  }
+  #car h3 .small {
+    font-size: 15px;
+    display: block;
+    font-weight: 300;
+    color: #cc00ff;
+    line-height: 2;
+  }
+  
+  
+  /* third screen style */
+  
+  #cardva {
+    mix-blend-mode: screen;
+    position: relative;
+    opacity: 0;
+  }
+  #cardva img {
+    width: 33px;
+    display: block;
+    position: absolute;
+    margin-top: 145px;
+    left: 175px;
+  }
+  #cardva h2 {
+    width: 100%;
+    font-size: 30px;
+    letter-spacing: 0.25px;
+    position: absolute;
+    top: 35px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    position: absolute;
+    opacity: 1;
+  }
+  #cardva h3 {
+    width: 100%;
+    font-size: 56px;
+    opacity: 1;
+    letter-spacing: 0.25px;
+    position: absolute;
+    top: 210px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+  }
+  #cardva h3 .small {
+    font-size: 56px;
+    font-weight: 100;
+  }
