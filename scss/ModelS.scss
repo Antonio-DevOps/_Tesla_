@@ -7,7 +7,7 @@
 #section__1{
     // height: 100vh;-for 1968x1173
     // width: $container;
-    height: 120vh;
+    height: 100vh;
     margin: 0 auto;
     // padding: 0 $gap;
     display: flex;
@@ -174,10 +174,10 @@
     background-image: url(../img/800512.jpg);
     
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 #section__4{
-    height: 120vh;
+    height: 100vh;
     margin-top: 3rem;
 }
 .article{
@@ -291,7 +291,7 @@
     background-image: url(../img/footer.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 120vh;
+    height: 100vh;
     
 }
 .bl{

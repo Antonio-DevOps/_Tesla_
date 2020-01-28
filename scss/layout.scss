@@ -1,5 +1,7 @@
 // variables
-$container: 1170px;
+$container: 1920px;
+$height100: 100vh;
+$height120: 120vh;
 $gap: 15px;
 $col: 12;
 $colWidth: 100% / $col;
@@ -16,7 +18,11 @@ $btnBorderColor: $primaryColor;
 *{
     box-sizing: border-box
 }
-
+.adapvite_container{
+    max-width: 1920px;
+    width: 100%;
+    height: 100vh;
+}
 .container{
     max-width: $container;
     width: 100%;
@@ -49,7 +55,6 @@ $btnBorderColor: $primaryColor;
         width: $colWidth * $i;
     }
 }
-
 @media screen and (min-width: 768px){
     .ba-col-sm-12{
         width: 100%;
@@ -134,13 +139,68 @@ $btnBorderColor: $primaryColor;
 }
 
 @media screen and (max-width: 991px) {
+    #section_general{
+        max-width: 991px;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../img/main_hero_homepage_desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: scaleZ(0.1);
+    }
     .hidden-sm {
         display: none !important;
     }
 }
 
-
-
+@media screen and (max-width: 991px) {
+    .hidden-sm {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 1280px){
+    a{
+        color: greenyellow;
+    }
+    #section_general{
+        max-width: 1280px;
+        width: 100%;
+        height: $height100;
+        background-image: url(../img/main_hero_homepage_desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 1337px){
+    a{
+        color:purple;
+    }
+    #section_general{
+        max-width: 1337px;
+        width: 100%;
+        height: $height100;
+        background-image: url(../img/hero1337px.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 1366px){
+    a{
+        color:gold;
+    }
+    #section_general{
+        max-width: 1366px;
+        width: 100%;
+        height: $height100;
+        background-image: url(../img/main_hero_homepage_desktop1366px.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
 
 
 
@@ -177,10 +237,3 @@ $btnBorderColor: $primaryColor;
 .ba-text-justify{
     text-align: justify;
 }
-
-
-
-
-
-
-

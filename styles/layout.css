@@ -1,8 +1,13 @@
 * {
   box-sizing: border-box; }
 
+.adapvite_container {
+  max-width: 1920px;
+  width: 100%;
+  height: 100vh; }
+
 .container {
-  max-width: 1170px;
+  max-width: 1920px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px; }
@@ -113,8 +118,59 @@
     display: none !important; } }
 
 @media screen and (max-width: 991px) {
+  #section_general {
+    max-width: 991px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/main_hero_homepage_desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scaleZ(0.1); }
   .hidden-sm {
     display: none !important; } }
+
+@media screen and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important; } }
+
+@media screen and (max-width: 1280px) {
+  a {
+    color: greenyellow; }
+  #section_general {
+    max-width: 1280px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/back1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover; } }
+
+@media screen and (max-width: 1337px) {
+  a {
+    color: purple; }
+  #section_general {
+    max-width: 1280px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/hero1337px.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover; } }
+
+@media screen and (max-width: 1366px) {
+  a {
+    color: red; }
+  #section_general {
+    max-width: 1280px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/main_hero_homepage_desktop1366px.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover; } }
 
 /* ba-common */
 .ba-text-center {
