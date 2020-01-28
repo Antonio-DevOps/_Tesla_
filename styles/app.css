@@ -187,7 +187,7 @@
   box-sizing: border-box; }
 
 span {
-  font-family: 'Google Sans', "sans-serif"; }
+  font-family: "gothamBook", "sans-serif"; }
 
 body {
   font-family: 'Open Sans', "sans-serif"; }
@@ -517,6 +517,15 @@ li {
 .bl {
   background-color: black; }
 
+.scroll_bar {
+  scrollbar-face-color: purple;
+  scrollbar-highlight-color: #000000;
+  scrollbar-shadow-color: #000000;
+  scrollbar-3dlight-color: #000000;
+  scrollbar-arrow-color: #000000;
+  scrollbar-track-color: #000000;
+  scrollbar-darkshadow-color: #000000; }
+
 #section_general {
   max-width: 1920px;
   width: 100%;
@@ -525,6 +534,26 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   transform: scaleZ(0.1); }
+
+.menu__items_linke {
+  color: whitesmoke;
+  font-family: "gotham_mediumregular", "sans-serif";
+  letter-spacing: 0.4rem; }
+  .menu__items_linke:hover {
+    color: whitesmoke;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.1);
+    -webkit-animation: pulsate 1.2s linear infinite;
+    animation: pulsate 1.2s linear infinite; }
+
+@-webkit-keyframes pulsate {
+  50% {
+    color: #fff;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff; } }
+
+@keyframes pulsate {
+  50% {
+    color: #fff;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff; } }
 
 .general_name_cars {
   display: flex;
@@ -536,17 +565,6 @@ li {
   font-family: 'Roboto', "sans-serif";
   text-transform: capitalize;
   letter-spacing: 1px; }
-
-.nav_dots {
-  color: white;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  top: 50%; }
-  .nav_dots_pages {
-    margin-bottom: 1rem;
-    font-family: 'Roboto', "sans-serif"; }
 
 .remGen {
   margin-top: 25rem; }
@@ -626,19 +644,19 @@ li {
   position: absolute;
   width: 100px;
   height: 30px;
-  background: #FDA8CF;
+  background: #FFEB3B;
   border-radius: 75px;
   z-index: -3;
   animation: 1s clockwise infinite; }
 
 .border:hover:after {
-  background: #FFEB3B;
-  animation: 2s counterclockwise infinite;
+  background: white;
+  animation: counterclockwise infinite;
   z-index: -2; }
 
 .border:hover {
   box-shadow: 0 5px 35px 0px #9C27B0;
-  background: white;
+  background: #FDA8CF;
   color: black;
   z-index: 1; }
 
@@ -703,3 +721,96 @@ li {
 #section3 {
   max-width: 1920px;
   height: 100%; }
+
+.rel {
+  position: relative; }
+
+.content__S3 {
+  position: absolute;
+  top: -650px;
+  right: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.titleS3 {
+  text-align: center;
+  text-transform: uppercase;
+  /* display: inline-block; */
+  color: peru;
+  font-size: 4rem;
+  display: flex; }
+
+.titleS3_btn {
+  display: flex;
+  width: 240px;
+  height: 50px;
+  border-radius: 50px;
+  margin-top: 3rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "gothamBook", "sans-serif";
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 1.3rem; }
+
+.dots_nav {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  top: 50%; }
+  .dots_nav__pages {
+    color: white;
+    margin-bottom: 1rem; }
+  .dots_nav_link {
+    font-family: "gothamBook", "sans-serif";
+    color: whitesmoke;
+    font-size: 1rem; }
+
+.rectangle-in {
+  display: flex;
+  width: 240px;
+  height: 50px;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  border: none;
+  background: peru;
+  -webkit-transition-property: peru;
+  transition-property: peru;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+
+.rectangle-in:before {
+  content: "";
+  position: absolute;
+  display: flex;
+  width: 241px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+
+.rectangle-in:hover, .rectangle-in:focus, .rectangle-in:active {
+  color: white; }
+
+.rectangle-in:hover:before, .rectangle-in:focus:before, .rectangle-in:active:before {
+  -webkit-transform: scale(0);
+  transform: scale(0); }

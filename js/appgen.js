@@ -21,3 +21,43 @@
       });
     }
   }
+  // ==============================================================Scroll_nav===============================
+  $(window).scroll(function () {
+		if ($(window).scrollTop() >= 600) {
+			$(".dots_nav_link").css({
+				'color': 'black'
+			});	
+		}
+		else 
+		{
+		$(".dots_nav_link").css({
+			'color': 'white'
+		});
+		};
+  });
+  
+//   var scrolled;
+// window.onscroll = function() {
+//     scrolled = window.pageYOffset || document.documentElement.scrollTop;
+//     if(scrolled >= 450){
+//         $(".dots_nav_link").css({'color': 'black'})
+//     }
+//     if(900 <= scrolled){
+//         $(".dots_nav_link").css({"color": "white"})         
+//     }
+//     else(this.scrolled >=450)
+//     {
+//       $(".dots_nav_link").css({
+//         	'color': 'white'
+//         });
+//     }
+//     // 		else 
+// 		// {
+// 		// 	$(".dots_nav").css({
+// 		// 	'color': 'white'
+// 		// });
+// 		// $(".dots_nav_link").css({
+// 		// 	'color': 'white'
+// 		// });
+// 		// };
+//   }
