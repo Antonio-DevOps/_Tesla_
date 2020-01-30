@@ -7,7 +7,7 @@
 #section__1{
     // height: 100vh;-for 1968x1173
     // width: $container;
-    height: 100vh;
+    // height: 100vh;
     margin: 0 auto;
     // padding: 0 $gap;
     display: flex;
@@ -41,7 +41,7 @@
 }
 .sub__info{
 
-    margin-top: 30rem;
+    margin-top: 35rem;
     justify-content: center;
     align-items: center;
 }
@@ -86,7 +86,7 @@
 // -----------------------------------------------------------2s-section start---------------------------------------
 #section__2{
     // width: $container;
-    // height: 100vh;
+    height: 100vh;
     margin: 0 auto;
     // padding: 0 $gap;
     display: flex;
@@ -159,7 +159,10 @@
 }
 
 //------------------------------------------- section 3-s-----------------------------------------
-
+#section__3{
+    max-width: 1920px;
+    height: 100vh;
+}
 .sliderS{
     display: flex;
     max-width: 1100px;
@@ -172,7 +175,6 @@
 // -------------------------------------------section 4-s--------------------------------------------
 .bg_4{
     background-image: url(../img/800512.jpg);
-    
     background-repeat: no-repeat;
     background-size: cover;
 }

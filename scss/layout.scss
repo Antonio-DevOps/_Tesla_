@@ -2,6 +2,7 @@
 $container: 1920px;
 $height100: 100vh;
 $height120: 120vh;
+$container414: 414px;
 $gap: 15px;
 $col: 12;
 $colWidth: 100% / $col;
@@ -53,6 +54,28 @@ $btnBorderColor: $primaryColor;
 @for $i from 1 through $col {
     .ba-col-#{$i}{
         width: $colWidth * $i;
+    }
+}
+@media screen and (max-width: 414px){
+    .container{
+        max-width: $container414;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 $gap;
+        // background-color: $yellow;
+    
+    }
+    .title__inform_gen{
+        display: none;
+    }
+    #section_general{
+        max-width: 414px;
+        width: 100%;
+        height: 75vh;
+        background-image: url(../img/main_hero_homepage_desktop414.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
     }
 }
 @media screen and (min-width: 768px){
@@ -199,6 +222,52 @@ $btnBorderColor: $primaryColor;
         background-size: cover;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+}
+@media screen and (max-width: 1920px){
+    a{
+        color:peru;
+    }
+    #section_general{
+        max-width: 1920px;
+        width: 100%;
+        height: $height100;
+        background-image: url(../img/main_hero_homepage_desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .general_name_cars {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20rem;
+    }
+    .remGen{
+        margin-top: 30rem;
+    }
+}
+@media screen and (max-width: 2080px){
+    a{
+        color:purple;
+    }
+    #section_general{
+        max-width: 2080px;
+        width: 100%;
+        height: $height100;
+        background-image: url(../img/main_hero_homepage_desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .general_name_cars {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20rem;
+    }
+    .remGen{
+        margin-top: 30rem;
     }
 }
 

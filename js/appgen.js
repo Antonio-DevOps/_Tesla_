@@ -23,9 +23,9 @@
   }
   // ==============================================================Scroll_nav===============================
   $(window).scroll(function () {
-		if ($(window).scrollTop() >= 600) {
+		if ($(window).scrollTop() >= 400) {
 			$(".dots_nav_link").css({
-				'color': 'black'
+				'color': '#ff69B4'
 			});	
 		}
 		else 
@@ -35,29 +35,3 @@
 		});
 		};
   });
-  
-//   var scrolled;
-// window.onscroll = function() {
-//     scrolled = window.pageYOffset || document.documentElement.scrollTop;
-//     if(scrolled >= 450){
-//         $(".dots_nav_link").css({'color': 'black'})
-//     }
-//     if(900 <= scrolled){
-//         $(".dots_nav_link").css({"color": "white"})         
-//     }
-//     else(this.scrolled >=450)
-//     {
-//       $(".dots_nav_link").css({
-//         	'color': 'white'
-//         });
-//     }
-//     // 		else 
-// 		// {
-// 		// 	$(".dots_nav").css({
-// 		// 	'color': 'white'
-// 		// });
-// 		// $(".dots_nav_link").css({
-// 		// 	'color': 'white'
-// 		// });
-// 		// };
-//   }
