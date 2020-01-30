@@ -328,13 +328,17 @@ li {
 .bg1 {
   background-image: url(../model_S/model-s@2x.jpg);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position-y: center; }
 
 #section__1 {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  max-width: 1920px;
+  width: 100%;
+  height: 100vh; }
 
 .title_speed {
   font-size: 50px; }
@@ -575,6 +579,32 @@ li {
 
 .bl {
   background-color: black; }
+
+.cont_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+footer {
+  background-color: black; }
+
+.logoS {
+  height: 100px;
+  width: 100px; }
+
+.footer_menu {
+  display: flex;
+  color: white; }
+
+.footer_link {
+  margin-right: 5rem;
+  color: white; }
+
+.footer_ksion4ik {
+  color: white; }
+
+.link_foot {
+  color: white; }
 
 .scroll_bar {
   scrollbar-face-color: purple;
