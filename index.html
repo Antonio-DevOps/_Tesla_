@@ -9,32 +9,67 @@
         <link rel="stylesheet" href="styles/fonts.css">
         <link rel="stylesheet" href="css/demo-page.css">
         <!-- <link rel="stylesheet" href="css/hover.css"> -->
-        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="styles/preloader.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="favicon.ico" type="img/x-icon" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
         <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap&subset=latin-ext,vietnamese" rel="stylesheet">
         <title>General</title>
 </head>
-<body class="scroll_bar" >
+<body class="scroll_bar">
+    <!-- Preloader -->
+    <!-- <div class="table">
+        <div class="table-cell">
+          <div id="main">
+            <div id="screen">
+              <div id="home">
+                <div id="radial">
+                  <div id="empty"></div>
+                </div>
+                <div id="icon">
+                  <i class="fa fa-battery-quarter fa-3x"></i>
+                  <img src="img/battery_icon.png">
+                </div>
+                <div id="status" class="count">0%</div>
+                <h1 id="countdown" class="count">0</h1>
+                <div id="mph">mph</div>
+              </div>
+              <div id="car">
+                <img src="http://i1204.photobucket.com/albums/bb409/david_barukcic/engine_icon_zpsnvg1y3qj.png" />
+                <h2>ENGINE<br>DIAGNOSTICS</h2>
+                <h3>DC/DC Converter<br>Failure <span class="small">not solved</span></h3>
+              </div>
+      
+              <div id="cardva">
+                <img src="http://i1204.photobucket.com/albums/bb409/david_barukcic/temperature_icon_zpssyam3lm5.png" />
+      
+                <h2>ENGINE<br>TEMPERATURE</h2>
+                <h3>46<span class="small">	℃</span></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
     <section id="section_general" class=" adapvite_container b ">
         <header id="header" class="container">
             <nav class="navigation__general flex">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="img/Tesla_Motors_Logo.svg" alt="">
+                        <img src="img/Tesla_Motors_Logo.svg" alt="Logo">
                     </a>
                 </div>
-                <ul class="menu__nav flex">
+                <ul class="flex hidden-Sx">
                     <li class="menu__items">
                         <a href="ModelS.html"><span class="menu__items_linke" >MODEL S</span></a></li>
                     <li class="menu__items">
-                        <a href=""><span class="menu__items_linke" >MODEL X</span></a></li>
+                        <a href="#"><span class="menu__items_linke" >MODEL X</span></a></li>
                     <li class="menu__items">
                         <a href="#"><span class="menu__items_linke" >Cyber Truck</span></a></li>
                 </ul>
-                <ul class="menu_nav-second flex">
+                <ul class="menu_nav-second flex hidden-Sx">
                     <li class="menu__items__second">
-                        <a href="Sing_Up.html"><span><span class="menu__items_linke nav_Sing" >SingUp</span></span></a></li>
+                        <a href="Sing_Up.html"><span><span class="menu__items_linke nav_Sing">SingUp</span></span></a></li>
                     <li class="menu__items">
                         <a href="#" class="menu__items_forSub dispNone" >☰</a>
                         <ol class="sub_menu">
@@ -116,23 +151,18 @@
                     </div>
                 </div>
                 <div class="arrow_S4">
-                    <a href="#section_general" class="arrow__point arrow_S4 remGen" style="width: 40px;height: 40px;" ><img src="img/chevron-up.png" alt="arrow_down_section2"></a>
+                    <a href="#section_general" class="arrow__point arrow_S4 remGen" style="width: 30px;height: 30px;" ><img src="img/chevron-up.png" alt="arrow_down_section2"></a>
                 </div>
         </section>
         <footer class="footer_main">
             <div class="container">
                 <ul class="footer_nav">
-                    <li class="footer_li"><a href="#" class="footer_link">Tesla © Motors 2020 </a></li>
-                    <li class="footer_li"><a href="#" class="footer_link">Privacy & Legal</a></li>
-                    <li class="footer_li"><a href="#" class="footer_link">Contact</a></li>
-                    <li class="footer_li"><a href="#" class="footer_link">Careers</a></li>
-                    <li class="footer_li"><a href="#" class="footer_link">Get Newsletter</a></li>
-                    <li class="footer_li"><a href="#" class="footer_link">Forums</a></li>
-                    <li class="footer_li"><a href="#" class="footer_link">Locations</a></li>
+                    <li class="footer_li"><a href="https://www.tesla.com/" class="footer_link" target="_blank">Tesla © Motors 2020</a></li>
+                    <li class="footer_li"><a href="https://github.com/ksion4ik1" target="_blank" class="footer_link"><img src="img/github.svg" alt="GitHub" class="imgGithub" ></a></li>
                 </ul>
             </div>
         </footer>
-<ul class="dots_nav">
+<ul class="dots_nav hidden-Sx">
     <li class="dots_nav__pages">
         <a href="#section_general" class="dots_nav_link arrowGen hover_btn">Tesla</a>
     </li>
@@ -146,6 +176,21 @@
         <a href="#section_4" class="dots_nav_link arrowGen">Model Y</a>
     </li>
 </ul>
+<div class="burger-menu hidden-sX">
+    <a href="#" class="burger-menu_button"> 
+        <span class="burger-menu_lines"></span>
+    </a>
+    <nav class="burger_menu__nav">
+        <a href="#" class="burger_menu__link">Model S</a>
+        <a href="#" class="burger_menu__link">Model X</a>
+        <a href="#" class="burger_menu__link">Cyber Truck</a>
+        <a href="#" class="burger_menu__link">Sing Up</a>
+        <!-- <a href="#" class="burger_menu__link">Section5</a> -->
+    </nav>
+    <div class="burger_menu__overlay">
+
+    </div>
+</div>
 </body>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/appgen.js"></script>

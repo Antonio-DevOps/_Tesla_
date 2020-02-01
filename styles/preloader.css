@@ -22,10 +22,11 @@
   }
   
   .table {
-    display: table;
     width: 100%;
-    position: absolute;
+    position: fixed;
     height: 100%;
+    left: 0;
+    top: 0;
   }
   
   .table-cell {
@@ -135,7 +136,7 @@
   
   #home #icon img {
     width: 55px;
-    
+    height: 30px;
     opacity: 1;
     letter-spacing: 0.25px;
     position: absolute;

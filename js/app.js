@@ -2,7 +2,7 @@
 $('.sliderS').slick({
   dots: true,
   infinite: true,
-  speed: 500,
+  speed: 900,
   fade: true,
   cssEase: 'linear',
   centerMode: true,
@@ -15,7 +15,7 @@ $('#slider-news').slick({
   dots:true,
   arrows:false,
   autoplay:true,
-  autoplaySpeed:3000,
+  autoplaySpeed:6000,
 });
 
   // -------------------------For ScrollArrow-------------------------------------------
