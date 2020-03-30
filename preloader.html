@@ -21,7 +21,7 @@
             <i class="fa fa-battery-quarter fa-3x"></i>
             <img src="http://i1204.photobucket.com/albums/bb409/david_barukcic/battery_icon_zpst5bk33aq.png"/>
           </div>
-          <div id="status">15%</div>
+          <div id="status">0%</div>
           <h1 id="countdown">0</h1>
           <div id="mph">mph</div>
         </div>
@@ -47,17 +47,18 @@ let countdown = document.getElementById("countdown");
 let status = document.getElementById("status");
 let j = status + countdown;
 // function
- let countItDown = function() {
-  var currentTime = parseFloat(countdown.textContent);
+ let countItDown = function(element, text = '') {
+  var currentTime = parseFloat(element.textContent);
   if (currentTime < 100) {
-    countdown.textContent = currentTime + 1;
+    element.textContent = currentTime + 1 + text;
   } else {
-    countdown.textContent = 0;
+    element.textContent = 0;
   }
 
 };
 // call interval 
-var timer = window.setInterval(countItDown, 100);
+var timer = window.setInterval(function() {countItDown(countdown)}, 100);
+var timerPercent = setInterval(function() {countItDown(status, '%')}, 200);
 
 
 // -------ANIMATIONS------- //
