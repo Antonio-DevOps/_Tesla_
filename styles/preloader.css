@@ -8,13 +8,13 @@
             user-select: none;
   }
   
-  html, body {
+  /* html, body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
     background: #010101;
    
-  }
+  } */
   
   a, h1, h2, h3 {
   
@@ -140,17 +140,12 @@
   }
   
   #home #icon img {
-    width: 55px;
-    height: 30px;
+    width: 70px;
+    height: 40px;
     opacity: 1;
-    letter-spacing: 0.25px;
     position: absolute;
-    top: 75px;
-    left: 162px;
-    text-transform: uppercase;
-    color: #00a8ff;
-    font-weight: bold;
-    text-align: center;
+    top: 60px;
+    left: 160px;
   }
   
   #main.pressed, #main:active {

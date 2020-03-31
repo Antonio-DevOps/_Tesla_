@@ -67,19 +67,19 @@ burgerMenu(".burger-menu");
 //====================================================================loader==============================================
 $(window).on("load", function () {
   // makes sure the whole site is loaded
-  $(".table").delay(1100).fadeOut("slow"); // will first fade out the loading animation
+  $(".table").delay(1050).fadeOut("fast"); // will first fade out the loading animation
 
 let countdown = document.getElementById("countdown");
 let countdown1 = document.getElementById("status");
 // let focusCount = countdown + countdown1;
 
 // function
- let countItDown = function() {
+ let countItDown = function(element, text = '') {
   let currentTime = parseFloat(countdown.textContent);
   let currentTimE = parseFloat(countdown1.textContent);
   if (currentTime < 100) {
     countdown.textContent = currentTime + 10;
-    countdown1.textContent = currentTime + 20;
+    countdown1.textContent = currentTimE + 10 + text;
   } else {
     countdown.textContent = 0;
     countdown1.textContent = 0;
@@ -87,7 +87,9 @@ let countdown1 = document.getElementById("status");
 };
 
 // call interval 
-let timer = window.setInterval(countItDown, 100);
+let timer = window.setInterval(countItDown, 190);
+let timerPercent = setInterval(function() {countItDown(status, '%')}, 190);
+
 
 
 // -------ANIMATIONS------- //
@@ -106,37 +108,37 @@ $('#main').click(function() {
     TweenMax.to($('#home'), 0.4, {
       y: -360
     })
-    TweenMax.fromTo($('#car'), 0.4, {
-      y: 360,
-      autoAlpha: 1
-    }, {
-      y: 0
-    })
-    mode = "car";
-  } else if (mode == "car") {
-    TweenMax.to($('#car'), 0.4, {
-      y: -360
-    })
-    TweenMax.fromTo($('#cardva'), 0.4, {
-      y: 360,
-      autoAlpha: 1
-    }, {
-      y: 0
+    // TweenMax.fromTo($('#car'), 0.4, {
+    //   y: 360,
+    //   autoAlpha: 1
+    // }, {
+    //   y: 0
+    // })
+  //   mode = "car";
+  // } else if (mode == "car") {
+  //   TweenMax.to($('#car'), 0.4, {
+  //     y: -360
+  //   })
+  //   TweenMax.fromTo($('#cardva'), 0.4, {
+  //     y: 360,
+  //     autoAlpha: 1
+  //   }, {
+  //     y: 0
       
 
-    })
-    mode = "cardva";
-    } else if (mode == "cardva") {
-    TweenMax.to($('#home'), 0.2, {
-      y: 0
-    })
-    TweenMax.fromTo($('#cardva'), 0.2, {
-      y: 0,
-      autoAlpha: 1
-    }, {
-      y: 360
-    })
-    mode = "home";
+  //   })
+    // mode = "cardva";
+    // } else if (mode == "cardva") {
+    // TweenMax.to($('#home'), 0.2, {
+    //   y: 0
+    // })
+    // TweenMax.fromTo($('#cardva'), 0.2, {
+    //   y: 0,
+    //   autoAlpha: 1
+    // }, {
+    //   y: 360
+    // })
+    // mode = "home";
    
   }
 });
@@ -149,7 +151,7 @@ $(function() {
     radials: 100
   })
 
-
+//==============Make radial==============================
 function makeRadial(options) {
   if (options && options.el) {
     let el = options.el;

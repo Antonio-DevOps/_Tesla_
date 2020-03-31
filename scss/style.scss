@@ -1,13 +1,11 @@
 *{
-	// font-family: 'Josefin Sans', "sans-serif";
 	box-sizing: border-box;
 }
-span{
-	font-family: "gothamBook", "sans-serif";
-}
-body {
-	font-family: 'Open Sans', "sans-serif";
-}
+// var
+$genereal_font:'SF UI Display', "sans-serif";
+$color_avtor: #FFBE01;
+$color_tesla: white;
+// ========================================
 img{
 	max-width: 100%;
 	height: 100%;

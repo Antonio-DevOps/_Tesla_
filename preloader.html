@@ -45,12 +45,12 @@
 <script>
 let countdown = document.getElementById("countdown");
 let status = document.getElementById("status");
-let j = status + countdown;
 // function
  let countItDown = function(element, text = '') {
   var currentTime = parseFloat(element.textContent);
   if (currentTime < 100) {
-    element.textContent = currentTime + 1 + text;
+    element.textContent = currentTime + 10 + text;
+    
   } else {
     element.textContent = 0;
   }

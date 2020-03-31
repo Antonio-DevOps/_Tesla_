@@ -6,8 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/app.css">
-        <link rel="stylesheet" href="styles/fonts.css">
-        <link rel="stylesheet" href="css/demo-page.css">
+        <link rel="stylesheet" href="fonts/font.css">
+        <!-- <link rel="stylesheet" href="css/demo-page.css"> -->
         <!-- <link rel="stylesheet" href="css/hover.css"> -->
         <link rel="stylesheet" href="styles/preloader.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -17,39 +17,27 @@
         <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap&subset=latin-ext,vietnamese" rel="stylesheet">
         <title>General</title>
 </head>
-<body class="scroll_bar">
+<body>
     <!-- Preloader -->
     <div class="table">
-        <div class="table-cell">
-          <div id="main">
-            <div id="screen">
-              <div id="home">
-                <div id="radial">
-                  <div id="empty"></div>
-                </div>
-                <div id="icon">
-                  <img src="img/battery_icon.png">
-                </div>
-                <div id="status"class="count">0%</div>
-                <h1 id="countdown" class="count">0</h1>
-                <div id="mph">mph</div>
-              </div>
-              <div id="car">
-                <img src="http://i1204.photobucket.com/albums/bb409/david_barukcic/engine_icon_zpsnvg1y3qj.png" />
-                <h2>ENGINE<br>DIAGNOSTICS</h2>
-                <h3>DC/DC Converter<br>Failure <span class="small">not solved</span></h3>
-              </div>
-      
-              <div id="cardva">
-                <img src="http://i1204.photobucket.com/albums/bb409/david_barukcic/temperature_icon_zpssyam3lm5.png" />
-      
-                <h2>ENGINE<br>TEMPERATURE</h2>
-                <h3>46<span class="small">	℃</span></h3>
-              </div>
-            </div>
-          </div>
+    <div class="table-cell">
+        <div id="main">
+        <div id="screen">
+        <div id="home">
+        <div id="radial">
+        <div id="empty"></div>
         </div>
-      </div>
+        <div id="icon">
+        <img src="img/battery.svg">
+        </div>
+        <div id="status"class="count">0</div>
+        <h1 id="countdown" class="count">0</h1>
+        <div id="mph">mph</div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
     <section id="section_general" class=" adapvite_container b ">
         <header id="header" class="container">
             <nav class="navigation__general flex">
@@ -69,7 +57,7 @@
                 <ul class="menu_nav-second flex hidden-Sx">
                     <li class="menu__items__second">
                         <a href="Sing_Up.html"><span><span class="menu__items_linke nav_Sing">SingUp</span></span></a></li>
-                    <li class="menu__items">
+                    <!-- <li class="menu__items"> 
                         <a href="#" class="menu__items_forSub dispNone" >☰</a>
                         <ol class="sub_menu">
                             <li class="sub__menu-items">
@@ -83,7 +71,7 @@
                             <li class="sub__menu-items">
                                 <a href="#" class="sub__menu__link" ><span>ModelS</span></a></li>
                         </ol>
-                    </li>
+                    </li> -->
                 </ul>
             </nav>
         </header>
@@ -102,64 +90,63 @@
             <a href="#section2" class="arrow__point arrowGen" style="width: 40px;height: 40px;" ><img src="img/arrow_down.svg" alt="arrow_down_section2"></a>
         </div>
     </div>
-        </section> 
-        <section id="section2" class="">
-            <header id="header" class="container">
-                <nav class="navigation__general flex">
-                    <div class="logo">
-                        <a href="#section_general">
-                            <img src="img/Tesla_Motors_Logo black.svg" alt="">
-                        </a>
-                    </div>
-            </header>
-            <article class="Title_article_S2 container">
-                <h2 class="Title_article_S2_big" >Solar panels</h2>
-                <div class="for_title">
-                <p class="Title_article_S2_little"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta quia sequi, praesentium eveniet obcaecati temporibus pariatur explicabo? Amet quos fugit suscipit provident aliquam quidem! Enim culpa ea doloribus voluptatibus minima?
-                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse omnis, rem aut, eius voluptates tenetur alias voluptatum asperiores fugiat vero consequatur, ipsa ipsam suscipit nobis illo. Soluta nostrum natus repellendus!
-                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, repellat eos alias recusandae in ducimus commodi nisi ipsam ad obcaecati dicta vel voluptatem repellendus. Accusamus assumenda quos sequi magnam minus!
-                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam atque vero voluptatum eveniet, est illo cum, quam commodi obcaecati debitis veniam rem tempore excepturi dicta earum velit nobis sapiente voluptate.   
-                </p>
+    </section> 
+    <section id="section2" class="">
+        <header id="header" class="container">
+            <nav class="navigation__general flex">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/Tesla_Motors_Logo black.svg" alt="">
+                    </a>
                 </div>
-                <a href="#" class="s2btn"><span class="s2btn_title">Order Now</span></a>
-            </article>
-            <div class="arrow_S2 remGen ">
-                <a href="#section3" class="arrow__point arrowGen" style="width: 40px;height: 40px;" ><img src="img/arrow_down.svg" alt="arrow_down_section2"></a>
+        </header>
+        <article class="Title_article_S2 container">
+        <h2 class="Title_article_S2_big" >Solar panels</h2>
+        </article>
+        <div class="arrow_S2 remGen ">
+            <a href="#section3" class="arrow__point arrowGen" style="width: 40px;height: 40px;" ><img src="img/arrow_down.svg" alt="arrow_down_section2"></a>
+        </div>
+    </section>
+    <section id="section3" class="container1">
+        <video autoplay=" " muted =" " loop =" " width="1920px" height="100%">
+            <source src="video/section3.mp4">
+        </video>
+        <div class="container rel">
+            <div class="content__S3" >
+            <h2 class="titleS3" >Tesla Accessories</h2>
+            <a href="#" class="titleS3_btn"><h6 class="S3_title">Order Now</h6></a>
             </div>
-        </section>
-        <section id="section3" class="container1">
-            <video autoplay=" " muted =" " loop =" " width="1920px" height="100%">
-                <source src="video/section3.mp4">
-            </video>
-            <div class="container rel">
-                <div class="content__S3" >
-                <h2 class="titleS3" >Tesla Accessories</h2>
-                <a href="#" class="titleS3_btn rectangle-in"><h6 class="titleS3_btn">Order Now</h6></a>
+        </div>
+    </section>
+    <section id="section_4" class="">
+            <div class="container flex_s4">
+                <div class="title">
+                    <h4 class="title_small_s4">Tesla</h4>
+                    <h3 class="title_Big_s4">Model Y</h3>
+                </div>
+                <div class="btn_s4">
+                    <a href="#" class="titleS3_btn"><h6 class="titleS4_btn">Order Now</h6></a>
                 </div>
             </div>
-        </section>
-        <section id="section_4" class="">
-                <div class="container flex_s4">
-                    <div class="title">
-                        <h4 class="title_small_s4">Tesla</h4>
-                        <h3 class="title_Big_s4">Model Y</h3>
-                    </div>
-                    <div class="btn_s4">
-                        <a href="#" class="titleS4_btn "><h6 class="titleS4_btn">Order Now</h6></a>
-                    </div>
-                </div>
-                <div class="arrow_S4">
-                    <a href="#section_general" class="arrow__point arrow_S4 remGen" style="width: 30px;height: 30px;" ><img src="img/chevron-up.png" alt="arrow_down_section2"></a>
-                </div>
-        </section>
-         <footer class="footer_main">
-            <div class="container">
-                <ul class="footer_nav">
-                    <li class="footer_li"><a href="https://www.tesla.com/" class="footer_link" target="_blank">Tesla © Motors 2020</a></li>
-                    <li class="footer_li"><a href="https://github.com/ksion4ik1" target="_blank" class="footer_link"><img src="img/github.svg" alt="GitHub" class="imgGithub" ></a></li>
-                </ul>
+            <div class="arrow_S4">
+                <a href="#section_general" class="arrow__point arrow_S4 remGen" style="width: 30px;height: 30px;" ><img src="img/chevron-up.png" alt="arrow_down_section2"></a>
             </div>
-        </footer>
+    </section>
+    <section id="section_5" class="footer">
+        <ul class="footer_nav">
+            <li class="footer_links">
+            <h5 class="footer_avtor">by Ksion4ik</h5>
+            </li>
+            <li class="footer_links">
+            <h4 class="footer_title">Tesla © Motors 2020</h4>
+            </li>
+            <li class="footer_links">
+            <a href="https://github.com/ksion4ik1" target="_blank">
+            <img src="img/github.svg" class="footer_img" alt="GitHub">
+            </a>
+            </li>
+        </ul>
+    </section>
     <ul class="dots_nav hidden-Sx">
    </footer>
 <ul class="dots_nav hidden-Sx">
@@ -176,7 +163,7 @@
         <a href="#section_4" class="dots_nav_link arrowGen">Model Y</a>
     </li>
 </ul>
-<div class="burger-menu hidden-sX">
+<!-- <div class="burger-menu hidden-sX">
     <a href="#" class="burger-menu_button"> 
         <span class="burger-menu_lines"></span>
     </a>
@@ -185,11 +172,11 @@
         <a href="#" class="burger_menu__link">Model X</a>
         <a href="#" class="burger_menu__link">Cyber Truck</a>
         <a href="#" class="burger_menu__link">Sing Up</a>
-        <!-- <a href="#" class="burger_menu__link">Section5</a> -->
+        <a href="#" class="burger_menu__link">Section5</a> -->
     </nav>
-    <div class="burger_menu__overlay">
+    <!-- <div class="burger_menu__overlay">
 
-    </div>
+    </div> -->
 </body>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/appgen.js"></script>
