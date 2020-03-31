@@ -68,16 +68,21 @@ burgerMenu(".burger-menu");
 $(window).on("load", function () {
   // makes sure the whole site is loaded
   $(".table").delay(1100).fadeOut("slow"); // will first fade out the loading animation
+
 let countdown = document.getElementById("countdown");
-let countuP = document.getElementsByClassName("count");
-let j = "status + countdown";
+let countdown1 = document.getElementById("status");
+// let focusCount = countdown + countdown1;
+
 // function
  let countItDown = function() {
   let currentTime = parseFloat(countdown.textContent);
+  let currentTimE = parseFloat(countdown1.textContent);
   if (currentTime < 100) {
     countdown.textContent = currentTime + 10;
+    countdown1.textContent = currentTime + 20;
   } else {
     countdown.textContent = 0;
+    countdown1.textContent = 0;
   }
 };
 
