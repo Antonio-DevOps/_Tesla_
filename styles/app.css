@@ -294,6 +294,15 @@ video {
 .white {
   color: white; }
 
+.visually-hidden {
+  position: absolute;
+  left: -9999999px;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden; }
+
 a {
   text-decoration: none; }
 
@@ -728,86 +737,6 @@ footer {
   color: white;
   z-index: 8; }
 
-.border:hover:before, .border:hover:after {
-  display: block;
-  content: '';
-  position: absolute;
-  width: 100px;
-  height: 30px;
-  background: #FFEB3B;
-  border-radius: 75px;
-  z-index: -3;
-  animation: 1s clockwise infinite; }
-
-.border:hover:after {
-  background: white;
-  animation: counterclockwise infinite;
-  z-index: -2; }
-
-.border:hover {
-  box-shadow: 0 5px 35px 0px #9C27B0;
-  background: #FDA8CF;
-  color: black;
-  z-index: 1; }
-
-@keyframes clockwise {
-  0% {
-    top: -5px;
-    left: 0; }
-  12% {
-    top: -2px;
-    left: 2px; }
-  25% {
-    top: 0;
-    left: 5px; }
-  37% {
-    top: 2px;
-    left: 2px; }
-  50% {
-    top: 5px;
-    left: 0; }
-  62% {
-    top: 2px;
-    left: -2px; }
-  75% {
-    top: 0;
-    left: -5px; }
-  87% {
-    top: -2px;
-    left: -2px; }
-  100% {
-    top: -5px;
-    left: 0; } }
-
-@keyframes counterclockwise {
-  0% {
-    top: -5px;
-    right: 0; }
-  12% {
-    top: -2px;
-    right: 2px; }
-  25% {
-    top: 0;
-    right: 5px; }
-  37% {
-    top: 2px;
-    right: 2px; }
-  50% {
-    top: 5px;
-    right: 0; }
-  62% {
-    top: 2px;
-    right: -2px; }
-  75% {
-    top: 0;
-    right: -5px; }
-  87% {
-    top: -2px;
-    right: -2px; }
-  100% {
-    top: -5px;
-    right: 0; } }
-
 #section3 {
   max-width: 1920px;
   width: auto;
@@ -880,7 +809,8 @@ footer {
   background: transparent;
   color: white;
   font-weight: bolder;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: pointer; }
   .titleS3_btn:hover {
     color: black;
     background-color: whitesmoke; }
@@ -892,6 +822,23 @@ footer {
   position: absolute;
   right: 3%;
   top: -130px; }
+
+.ba-menu-block {
+  position: fixed;
+  left: 0;
+  top: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  transform: translateY(0);
+  transition: transform .4s;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#menuOpen:checked ~ .ba-menu-block {
+  transform: translateY(100%); }
 
 #footer {
   width: 100vw;

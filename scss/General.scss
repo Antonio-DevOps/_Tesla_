@@ -129,92 +129,92 @@
     color: white; 
     z-index:8;
   }
+  // =================================================================Animation_for_name_cars================
+  // .border:hover:before, .border:hover:after {
+  //   display: block;
+  //   content: '';
+  //   position: absolute;
+  //   width: 100px;
+  //   height: 30px;
+  //   background:#FFEB3B;
+  //   border-radius: 75px;
+  //   z-index: -3;
+  //   animation: 1s clockwise infinite; 
+  // }
   
-  .border:hover:before, .border:hover:after {
-    display: block;
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 30px;
-    background:#FFEB3B;
-    border-radius: 75px;
-    z-index: -3;
-    animation: 1s clockwise infinite; 
-  }
+  // .border:hover:after {
+  //   background:  white;
+  //   animation:  counterclockwise infinite;
+  //   z-index: -2; 
+  // }
   
-  .border:hover:after {
-    background:  white;
-    animation:  counterclockwise infinite;
-    z-index: -2; 
-  }
+  // .border:hover {
+  //   box-shadow: 0 5px 35px 0px #9C27B0;
+  //   background:  #FDA8CF;
+  //   color: black;
+  //   z-index:1;
+  // }
   
-  .border:hover {
-    box-shadow: 0 5px 35px 0px #9C27B0;
-    background:  #FDA8CF;
-    color: black;
-    z-index:1;
-  }
+  // @keyframes clockwise {
+  //   0% {
+  //     top: -5px;
+  //     left: 0; }
+  //   12% {
+  //     top: -2px;
+  //     left: 2px; }
+  //   25% {
+  //     top: 0;
+  //     left: 5px; }
+  //   37% {
+  //     top: 2px;
+  //     left: 2px; }
+  //   50% {
+  //     top: 5px;
+  //     left: 0; }
+  //   62% {
+  //     top: 2px;
+  //     left: -2px; }
+  //   75% {
+  //     top: 0;
+  //     left: -5px; }
+  //   87% {
+  //     top: -2px;
+  //     left: -2px; }
+  //   100% {
+  //     top: -5px;
+  //     left: 0; } 
+  //   }
   
-  @keyframes clockwise {
-    0% {
-      top: -5px;
-      left: 0; }
-    12% {
-      top: -2px;
-      left: 2px; }
-    25% {
-      top: 0;
-      left: 5px; }
-    37% {
-      top: 2px;
-      left: 2px; }
-    50% {
-      top: 5px;
-      left: 0; }
-    62% {
-      top: 2px;
-      left: -2px; }
-    75% {
-      top: 0;
-      left: -5px; }
-    87% {
-      top: -2px;
-      left: -2px; }
-    100% {
-      top: -5px;
-      left: 0; } 
-    }
-  
-  @keyframes counterclockwise {
-    0% {
-      top: -5px;
-      right: 0; }
-    12% {
-      top: -2px;
-      right: 2px; }
-    25% {
-      top: 0;
-      right: 5px; }
-    37% {
-      top: 2px;
-      right: 2px; }
-    50% {
-      top: 5px;
-      right: 0; }
-    62% {
-      top: 2px;
-      right: -2px; }
-    75% {
-      top: 0;
-      right: -5px; }
-    87% {
-      top: -2px;
-      right: -2px; }
-    100% {
-      top: -5px;
-      right: 0; } 
-    }
-    
+  // @keyframes counterclockwise {
+  //   0% {
+  //     top: -5px;
+  //     right: 0; }
+  //   12% {
+  //     top: -2px;
+  //     right: 2px; }
+  //   25% {
+  //     top: 0;
+  //     right: 5px; }
+  //   37% {
+  //     top: 2px;
+  //     right: 2px; }
+  //   50% {
+  //     top: 5px;
+  //     right: 0; }
+  //   62% {
+  //     top: 2px;
+  //     right: -2px; }
+  //   75% {
+  //     top: 0;
+  //     right: -5px; }
+  //   87% {
+  //     top: -2px;
+  //     right: -2px; }
+  //   100% {
+  //     top: -5px;
+  //     right: 0; } 
+  //   }
+      // =================================================================Animation_for_name_cars================
 // ===============================================Наведение=====================================
 #section3{
   max-width: 1920px;
@@ -278,7 +278,7 @@
     letter-spacing: 4px;
     font-size: 2.5rem;
     text-transform: capitalize;
-}
+  }
 }
 .titleS3_btn{
   display: flex;
@@ -297,6 +297,7 @@
   color: white;
   font-weight: bolder;
   text-transform: uppercase;
+  cursor: pointer;
   &:hover{
     color: black;
     background-color: whitesmoke;
@@ -310,6 +311,27 @@
   right: 3%;
   top: -130px;
 }
+//========================================Order form======================================
+.ba-menu-block{
+  position: fixed;
+  left: 0;
+  top: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  transform: translateY(0);
+  transition: transform .4s;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#menuOpen:checked ~ .ba-menu-block{
+  transform: translateY(100%);
+}
+
+
+//=========================================End form=======================================
 // =================================================End section4============================
 //================================================footer====================================
 #footer{

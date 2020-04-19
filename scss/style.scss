@@ -52,3 +52,12 @@ video{
 .white{
 	color: white;
 }
+.visually-hidden {
+    position: absolute;
+    left: -9999999px;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: 0;
+	overflow: hidden;
+}
