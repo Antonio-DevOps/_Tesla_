@@ -20,7 +20,7 @@ $btnBorderColor: $primaryColor;
     box-sizing: border-box
 }
 .adapvite_container{
-    max-width: 1920px;
+    max-width: $container;
     width: 100%;
     height: 100vh;
 }
@@ -56,6 +56,40 @@ $btnBorderColor: $primaryColor;
         width: $colWidth * $i;
     }
 }
+@media screen and (min-width: 375px){
+    .container{
+        max-width: $container414;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 $gap;
+        // background-color: $yellow;
+    
+    }
+    .title__inform_gen{
+        display: none;
+    }
+    .burger-menu_button {
+        display: block !important;
+    }
+    #section_general{
+        max-width: 414px;
+        width: 100%;
+        height: 75vh;
+        background-image: url(../img/main_hero_homepage_desktop414.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+    .hidden-Sx{
+        display: none !important;
+    }
+    .burger-menu_button{
+        display: block !important;
+    }
+    .table {
+        width: 375px !important;
+}
+}
 @media screen and (max-width: 414px){
     .container{
         max-width: $container414;
@@ -85,6 +119,12 @@ $btnBorderColor: $primaryColor;
     }
     .burger-menu_button{
         display: block !important;
+    }
+    .table {
+        width: 414px !important;
+    }
+    .table-cell {
+        transform: scale(.5);
     }
 }
 @media screen and (max-width: 768px){
@@ -126,6 +166,16 @@ $btnBorderColor: $primaryColor;
     }
     // .burger-menu{
 
+    // }
+    // .table {
+    //     width: 768px !important;
+    //     position: relative !important;
+    // }
+    // .table-cell {
+    //     transform: scale(.9);
+    //     position: absolute;
+    //     left: 5%;
+    //     top: 25%;
     // }
 
 }
@@ -205,6 +255,9 @@ $btnBorderColor: $primaryColor;
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .general_name_cars{
+        margin-top: 300px !important;
+    }
 }
 @media screen and (max-width: 1337px){
     a{
@@ -242,7 +295,7 @@ $btnBorderColor: $primaryColor;
         color:peru;
     }
     #section_general{
-        max-width: 1920px;
+        max-width: $container;
         width: 100%;
         height: $height100;
         background-image: url(../img/main_hero_homepage_desktop.jpg);

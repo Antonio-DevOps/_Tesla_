@@ -2,7 +2,7 @@
 //  ------------------------------------------Slider----------------------------------------------
 // #section0{
 #section_general{
-    max-width: 1920px;
+    max-width: $container;
     width: 100%;
     height: $height100;
     background-image: url(../img/main_hero_homepage_desktop1080.jpg);
@@ -57,7 +57,7 @@
 }
 //============================section2============================================================
 #section2{
-    max-width: 1920px;
+    max-width: $container;
     width: 100%;
     height: $height100;
     background-image: url(../img/homepage_energy_hero_desktop.jpg);
@@ -217,7 +217,7 @@
       // =================================================================Animation_for_name_cars================
 // ===============================================Наведение=====================================
 #section3{
-  max-width: 1920px;
+  max-width: $container;
   width: auto;
   height: auto;
 }
@@ -247,7 +247,7 @@
 #section_4{
   display: flex;
   background-image: url(../img/blue-hero-desktop.jpg);
-  max-width:1920px;
+  max-width:$container;
   width: 100%;
   height: $height100;
   background-repeat: no-repeat;
