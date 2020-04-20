@@ -63,7 +63,7 @@
 .ba-col-12 {
   width: 100%; }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
   .container {
     max-width: 414px;
     width: 100%;

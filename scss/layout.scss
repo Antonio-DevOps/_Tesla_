@@ -56,7 +56,7 @@ $btnBorderColor: $primaryColor;
         width: $colWidth * $i;
     }
 }
-@media screen and (min-width: 375px){
+@media screen and (max-width: 375px){
     .container{
         max-width: $container414;
         width: 100%;
