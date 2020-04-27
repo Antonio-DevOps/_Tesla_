@@ -181,7 +181,7 @@
 //------------------------------------------- section 3-s-----------------------------------------
 #section__3{
     max-width: $container;
-    height: 100vh;
+    
 }
 .title3{
     &_section3{
@@ -210,18 +210,113 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 85%;
+    top: 0;
     border-radius: 50%;
 }
-.sliderS{
-    display: flex;
-    max-width: 1920px;
+// ====================================Start_Slider_for_photo==================
+img {
     width: 100%;
-    // max-height: 800px;
-    // height: 100%;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
+  }
+  
+  .sim-slider {
+    width: 85%;
+    min-width: 320px;
+    margin: 20px auto;
+    padding: 30px 50px;
+    // border: 1px solid #ccd;
+    background-color: transparent;
+  }
+  .img_slider{
+      border: 1px solid white;
+      border-radius: 10px;
+  }
+  
+  /* General styles */
+  .sim-slider {
+    position: relative;
+  }
+  
+  .sim-slider-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+  }
+  
+  .sim-slider-element {
+    width: 100%;
+    transition: opacity 1s ease-in;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    display: block;
+  }
+  
+  /* Navigation item styles */
+  div.sim-slider-arrow-left,
+  div.sim-slider-arrow-right {
+    width: 22px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 4;
+  }
+  
+  div.sim-slider-arrow-left {
+    left: 10px;
+    top: 40%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat;
+  }
+  
+  div.sim-slider-arrow-right {
+    right: 10px;
+    top: 40%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat;
+  }
+  
+  div.sim-slider-arrow-left:hover {
+    opacity: 1.0;
+  }
+  
+  div.sim-slider-arrow-right:hover {
+    opacity: 1.0;
+  }
+  
+  div.sim-slider-dots {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    text-align: center;
+  }
+  
+  span.sim-dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    padding: 0;
+    display: inline-block;
+    background-color: #BBB;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+//=====================================Finish_slider===========================
+// .sliderS{
+//     display: flex;
+//     max-width: 1920px;
+//     width: 100%;
+//     // max-height: 800px;
+//     // height: 100%;
+//     margin-top: 5rem;
+//     margin-bottom: 5rem;     
+// }
 // -------------------------------------------section 4-s--------------------------------------------
 .bg_4{
     background-image: url(../img/800512.jpg);

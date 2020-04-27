@@ -1,0 +1,32 @@
+body{
+  text-align: center;
+}
+#gallery {
+  width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+}
+#gallery .photos img {
+  width: 100%;
+  display: none;
+}
+#gallery .photos img:first-child {
+  display: block;
+}
+.btn{
+  width: 150px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 1rem;
+  cursor: pointer;
+}
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

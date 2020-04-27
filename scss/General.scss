@@ -247,12 +247,13 @@
 #section_4{
   display: flex;
   background-image: url(../img/blue-hero-desktop.jpg);
-  max-width:$container;
+  // max-width:$container;
   width: 100%;
   height: $height100;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  top: -5px;
 }
 .flex_s4{
   display: flex;
