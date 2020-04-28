@@ -1,3 +1,9 @@
+.html_slids {
+  height: 100%;
+  background: #110101;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden; }
+
 .slideshow {
   position: absolute;
   z-index: 1;
@@ -104,3 +110,28 @@
   padding: 10px; }
   .the-most img {
     max-width: 100%; }
+
+#header_Cyber {
+  position: absolute;
+  z-index: 2;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%; }
+
+.navigation__Cyber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00BFFF; }
+
+.linke_Cyber {
+  color: #f60707;
+  letter-spacing: .6rem;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: larger; }
+
+.logo_Cyber {
+  width: 6.25rem;
+  height: 6.25rem;
+  margin-right: 2rem; }

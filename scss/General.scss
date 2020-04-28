@@ -35,7 +35,16 @@
   }
 }
 .nav_Sing{
-  text-transform: capitalize;
+  color: whitesmoke;
+  font-family: "SF UI Display", "sans-serif";
+  letter-spacing: 0.4rem;
+  
+  &:hover{
+  color: rgb(245,245,245);
+  text-shadow: 0 -1px rgba(0,0,0,.1);
+  -webkit-animation: pulsate 1.2s linear infinite;
+  animation: pulsate 1.2s linear infinite;
+}
 }
 
 .general_name_cars{

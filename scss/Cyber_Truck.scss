@@ -1,3 +1,9 @@
+.html_slids {
+  height: 100%;
+  background: #110101;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
 .slideshow {
   position: absolute;
   z-index: 1;
@@ -140,3 +146,67 @@
     max-width: 100%;
   }
 }
+// =======================nav_bar=============================
+#header_Cyber{
+  position: absolute;
+  z-index: 2;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+.navigation__Cyber{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00BFFF;
+}
+// .linke_Cyber{
+//   color: #f60707;
+//   letter-spacing: .6rem;
+//   text-transform: uppercase;
+//   font-family: 'Roboto', sans-serif;
+//   font-size: larger;
+
+// }
+.logo_Cyber{
+  width: 6.25rem;
+  height: 6.25rem;
+  margin-right: 2rem;
+}
+.menu__items{
+  &_linke{
+    color: whitesmoke;
+    font-family: $genereal_font;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    &_Cyber{
+    color: #f60707;
+    letter-spacing: .6rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    }
+  }
+.menu__items_linke_Cyber:hover{
+    color: rgb(245,245,245);
+    text-shadow: 0 -1px rgba(0,0,0,.1);
+    -webkit-animation: Uppulsate 1.2s linear infinite;
+    animation: Uppulsate 1.8s linear infinite;
+    @-webkit-keyframes Uppulsate {
+      50% { color: #f60707; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+     }
+     @keyframes Uppulsate {
+      50% { color: #f60707; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+     }
+     
+    } 
+  }
+.nav_Sing_Cyber{
+  text-transform: capitalize;
+  &:hover{
+    color: rgb(245,245,245);
+    text-shadow: 0 -1px rgba(0,0,0,.1);
+    -webkit-animation: Uppulsate 2s linear infinite;
+    animation: Uppulsate 2s linear infinite;
+  }
+  }
