@@ -1,10 +1,3 @@
-body,
-html {
-  height: 100%;
-  background: #110101;
-  font-family: 'Roboto', sans-serif;
-  overflow: hidden; }
-
 .slideshow {
   position: absolute;
   z-index: 1;
@@ -27,7 +20,7 @@ html {
       border: none; }
       .slideshow .slider .item .text {
         display: none; }
-      .slideshow .slider .item img {
+      .slideshow .slider .item .full_pageimg {
         min-width: 101%;
         min-height: 101%;
         position: absolute;
